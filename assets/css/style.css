@@ -7,7 +7,6 @@ body {
 .body-grid-wrapper {
     display: flex;
     width: 100%;
-    justify-content: center;
   }
   
 .body-grid-container {
@@ -21,10 +20,9 @@ body {
 
 .body-grid-item {
     padding: 15px 0;
-    border: 2px solid #227070;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
   }
 
@@ -82,8 +80,8 @@ body {
   }
   
 img{
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
 }
 
 section {
@@ -109,12 +107,39 @@ section {
 .flex-row {
     display: flex;
   }
+
+#about-me{
+    padding: 60px;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+}
+#about-img{
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#about-bio p{ 
+    padding: 60px;
+    align-items: left;
+    justify-content: space-around;
+    text-align: Left;
+}
 /* end about */
 
 /* apply styles to projects */
 .flex-row {
     display: flex;
   }
+
+#projects{
+    padding: 60px;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+}
 
 .project-grid-wrapper {
     display: flex;
@@ -126,8 +151,8 @@ section {
     max-width: 940px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr) 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 200px repeat(2, 1fr);
+    grid-template-rows: 100px repeat(1, 1fr);
     grid-gap: 10px;
 }
   
@@ -135,6 +160,17 @@ section {
     border: solid;
     padding: 1em;
     color: #227070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.body-grid-item.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
 /* end projects */
@@ -143,18 +179,16 @@ section {
 .contact h2 {
     color: #227070;
   }
+
+#contact-me{
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+}
   
-.contact-info {
+#contact-info {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-#contact-info p {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
   }
   
 #contact-info a {
@@ -164,7 +198,7 @@ section {
 #contact-info address ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
   }
