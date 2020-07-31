@@ -178,28 +178,24 @@ section {
 
 /* apply styles to <footer> */
 #footer { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background: #c3c7c7;
     width: 100%;
     padding: 20px 15px;
   }
   
 #footer h2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     color: #227070;;
-    font-size: 30px;
+    font-size: 15px;
     margin: 0;
   }
 
-#footer div {
-    line-height: 1.5;
-    text-align: left;
-  }
-
-#footer div a {
-    text-decoration: none;
-    color: #227070;
+#footer p {
+    color: #227070;;
+    font-size: 15px;
+    margin: 0;
   }
  /* end <footer> */ 
 
