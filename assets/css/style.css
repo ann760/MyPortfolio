@@ -2,27 +2,59 @@
 body {
     color: #227070;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
+
+.body-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+.body-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: repeat(2, 1fr);
+    color:  #227070;
+    font-size: 1.2rem;
+  }
+
+.body-grid-item {
+    padding: 15px 0;
+    border: 2px solid #227070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .body-grid-item.three {
+    grid-column: 1 / span 3;
+  }
+  
+  .body-grid-item.both {
+    grid-column: 2 / span 2;
+  }
+
 /* apply styles to <header> */
-header {
+#header {
     padding: 20px 35px;
     background-color: #c3c7c7;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
-header a {
+#header a {
     text-decoration: none;
     color: #227070;
   }
 
-header nav {
+#header nav {
     margin: 7px 0;
   }
   
-header nav ul {
+#header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -30,7 +62,7 @@ header nav ul {
     list-style: none;
   }
   
-header nav ul li a {
+#header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -44,6 +76,11 @@ header nav ul li a {
     box-sizing: border-box;
   }
   
+img{
+    width: 50%;
+    height: 50%;
+}
+
 section {
     padding: 60px;
   }
@@ -67,30 +104,22 @@ section {
 .flex-row {
     display: flex;
   }
-
-.about-grid-container {
-    max-width: 940px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.about-grid-item {
-    padding: 1em;
-    color: #227070;
-  }
 /* end about */
 
 /* apply styles to projects */
 .flex-row {
     display: flex;
   }
-  
+
+.project-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
 .project-grid-container {
-    max-width: 940px;
-    margin: 0 auto;
+    /*max-width: 940px;
+    margin: 0 auto;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);

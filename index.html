@@ -8,104 +8,119 @@
     </head>
 
     <body>
-      <!-- navigation -->
-      <header id="header">
-        <h1>Built by Ann-Marie Orozco</h1>
-        <nav> 
-          <!-- unordered list element -->
-          <ul>
-              <li>
-                  <!-- Anchor element> -->
-                  <a href="#about-me"> About Me</a>
-              </li>
-              <li>
-                  <a href="#projects"> Projects</a>
-              </li>
-              <li>
-                  <a href="#contact-me"> Contact Me</a>
-              </li>
-          </ul>
-        </nav>
-      </header>
+        <div class="body-grid-wrapper">
+          <div class="body-grid-container">
 
-      <!--"About Me" section-->
-      <section id="about-me" class="content">
-        <div class="flex-row">
-          <h2 class="section-title primary-border">About Me</h2>
-        </div>
-        <div>
-          <img src="./assets/images/Annie95.jpg" alt = "Ann-Marie smiling">
-        </div>
-        <div >
-          <p>
-            Hello, I'm Ann-Marie Orozco. I am a full stack web developer.
-          </p>
-        </div>
-      </section>
-       
-      <!--"projects" section-->
-      <section id="projects" class="project">
-        <div class="flex-row">
-          <h2 class="section-title primary-border">Projects</h2>
-        </div>
+            <!-- Headers -->
+            <div id = header class="body-grid-item three">
+              
+                <h1>Built by Ann-Marie</h1>
+                <nav> 
+                  <!-- unordered list element -->
+                  <ul>
+                      <li>
+                          <!-- Anchor element> -->
+                          <a href="#about-me"> About Me</a>
+                      </li>
+                      <li>
+                          <a href="#projects"> Projects</a>
+                      </li>
+                      <li>
+                          <a href="#contact-me"> Contact Me</a>
+                      </li>
+                  </ul>
+                </nav>
+              </header>
+            </div>
 
-        <div class="project-grid-wrapper">
-          <div class="project-grid-container">
-          <!-- Headers -->
-          <div class="project-grid-item">
-            Classic
-          </div>
-          <div class="project-grid-item">
-            Classic
+          <!-- Body About Me -->
+          <div class="body-grid-item">
+            <section id="about-me" class="about-me">
+              <div class="flex-row">
+                <h2 class="section-title primary-border">About Me</h2>
+              </div>
+            </section>
           </div>
 
-          <!-- Body -->
-          <div class="project-grid-item">
-            Project 1
+          <div class="body-grid-item both">
+            <div>
+              <img src="./assets/images/Annie95.jpg" alt = "Ann-Marie smiling">
+            </div>
+            <div>
+              <p>
+                Hello, I'm Ann-Marie Orozco. I am a full stack web developer.
+              </p>
+            </div>
           </div>
 
-          <div class="project-grid-item">
-            Project 2
+        <!-- Body Projects -->
+          <div class="body-grid-item">
+            <section id="projects" class="project">
+              <div class="flex-row">
+                <h2 class="section-title primary-border">Projects</h2>
+              </div>
+            </section>
           </div>
-
-          <div class="project-grid-item">
-            Project 3
+          <section>
+            <div class="body-grid-item both">
+              <div class="project-grid-wrapper">
+                <div class="project-grid-container">
+                <!-- Headers -->
+                <div class="project-grid-item">
+                  Classic
+                </div>
+                <div class="project-grid-item">
+                  Classic
+                </div>
+      
+                <!-- Body -->
+                <div class="project-grid-item">
+                  Project 1
+                </div>
+      
+                <div class="project-grid-item">
+                  Project 2
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <!-- Body Contact -->
+        <div class="body-grid-item">
+          <section id="contact-me" class="contact">
+          <div class="flex-row">
+            <h2 class="section-title primary-border">Contect Me</h2>
           </div>
-
-          <div class="project-grid-item">
-            Project 4
-          </div>
+        </section>
         </div>
-      </section>
-
-      <!-- "contact-me" section-->
-      <section id="contact-me" class="contact">
-        <div class="flex-row">
-          <h2 class="section-title primary-border">Contect Me</h2>
+        
+        <div class="body-grid-item both">
+          <section>
+            <div class="contact-info">
+                <address class="contact-info">      
+                  <ul>
+                    <li>
+                      <a href="https://www.linkedin.com/in/ann-marie-orozco-2218b925/"> LinkedIn </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/ann760">GitHub </a>
+                    </li>
+                  </ul>      
+                </address>
+            </div>
+          </section>
         </div>
-        <div class="contact-info">
-          <div>
-            <address class="contact-info">      
-              <ul>
-                <li>
-                  <a href="https://www.linkedin.com/in/ann-marie-orozco-2218b925/"> LinkedIn </a>
-                </li>
-                <li>
-                  <a href="https://github.com/ann760">GitHub </a>
-                </li>
-              </ul>      
-            </address>
+          
+          <!--footer-->
+          <div class="body-grid-item three">
+            <footer>
+              <h2>quote.</h2>
+              <!-- link to top-->
+              <div class="top">
+                <a href="#header">Top</a>
+              </div>
+            </footer>
           </div>
-        </div>
-      </section>
-
-      <!--footer-->
-      <footer>
-        <h2>quote.</h2>
-        <!-- link to top-->
-        <div class="top">
-          <a href="#header">Top</a>
-        </div>
-      </footer>
+        
     </body>
 </html>
