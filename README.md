@@ -1,4 +1,4 @@
-# My Portgolio
+# My Portfolio
 
 ## Purpose
 A website portfolio to showcase my projects and skills 
