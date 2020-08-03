@@ -41,7 +41,14 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
   }
+
+#header h1 {
+    text-shadow: 0 0 10px rgba(10, 81, 92, 0.473);
+}
 
 #header a {
     text-decoration: none;
@@ -64,7 +71,15 @@ body {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(10, 81, 92, 0.473);
   }
+
+#header nav ul li a:hover {  
+    color: #3a1b42;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
 /* end <header> */
 
 /* apply styles */
@@ -77,6 +92,7 @@ body {
 img{
     width: 40%;
     height: 40%;
+    border-radius: 180px;
 }
 
 section {
@@ -157,13 +173,42 @@ section {
     color: #227070;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+    text-align: right;
+    text-size-adjust: 2;
+    border-radius: 25px;
   }
 
-.project-grid-item.main {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    color:  red; 
+  .project-grid-item a {
+    color: #227070;
+}
+
+.project-grid-item.p-one {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    background-image: url("../images/runbuddy.jpg");
+    background-position: 80;
+    color: #227070;
+}
+
+.project-grid-item.p-one:hover {
+    background: #fce138;
+    color: #024e76;
+ 
+    text-shadow: none;
+  }
+
+  .project-grid-item.p-two {
+    background-image: url("../images/heart1.jpg");
+    background-size: cover;
+    background-position: 80;
+    color: #227070;
+}
+
+.project-grid-item.p-three {
+    background-image: url("../images/portfolio.jpg");
+    background-size: cover;
+    background-position: 80;
+    color: #227070;
 }
 
 /* end projects */
