@@ -43,9 +43,7 @@ body {
   flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
   background-size: cover;
-  background-attachment: fixed;
   background-position: 80%;
 }
 
@@ -130,9 +128,8 @@ section {
 }
 
 #about-img{
-  align-items: right;
   justify-content: space-around;
-  text-align: left;
+  text-align: center;
 }
 
 #about-bio p{ 
@@ -246,11 +243,7 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-  
-#contact-info a {
-  text-decoration: none;
-  color: #227070;
-}
+
 
 #contact-info address ul {
   display: flex;
@@ -267,6 +260,13 @@ section {
   font-weight: lighter;
   font-size: 1.55vw;
 }
+
+#contact-info address ul li a:hover {  
+  color: #3a1b42;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 /* end contect */
 
 /* apply styles to <footer> */
@@ -356,20 +356,11 @@ section {
         width: 100%;
         justify-content: center;
       }
-
-    #footer div {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-      }
     
     }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-   /* section {
-        padding: 30px 15px;
-      }*/
     
     .body-grid-container {
         grid-template-columns: 1fr 1fr;
@@ -414,5 +405,6 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
+ 
+   
 }
